@@ -25,7 +25,7 @@ export default defineConfig({
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    
+
     baseURL: 'https://api.club-administration.qa.qubika.com',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
@@ -36,9 +36,10 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'],
+      use: {
+        ...devices['Desktop Chrome'],
         storageState: 'playwright/.auth/user.json',
-       },
+      },
     },
 
     {
@@ -53,22 +54,22 @@ export default defineConfig({
 
     /* Test against mobile viewports. */
     {
-    //   name: 'Mobile Chrome',
-    //   use: { ...devices['Pixel 5'] },
-    // },
-    // {
-    //   name: 'Mobile Safari',
-    //   use: { ...devices['iPhone 12'] },
-    // },
+      //   name: 'Mobile Chrome',
+      //   use: { ...devices['Pixel 5'] },
+      // },
+      // {
+      //   name: 'Mobile Safari',
+      //   use: { ...devices['iPhone 12'] },
+      // },
 
-    /* Test against branded browsers. */
-    // {
-    //   name: 'Microsoft Edge',
-    //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
-    // },
-    // {
-    // name: 'Google Chrome',
-    // use: { ...devices['Desktop Chrome'], channel: 'chrome' },
+      /* Test against branded browsers. */
+      // {
+      //   name: 'Microsoft Edge',
+      //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
+      // },
+      // {
+      // name: 'Google Chrome',
+      // use: { ...devices['Desktop Chrome'], channel: 'chrome' },
     },
   ],
 

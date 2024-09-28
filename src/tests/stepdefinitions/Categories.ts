@@ -26,7 +26,7 @@ Then('the user is seeing the newly created category in the list', async function
   expect(response.ok()).toBeTruthy();
   let parsedJson = JSON.parse(JSON.stringify((await response.json())))
   userRemember.setVariable("page", parsedJson.totalPages)
-  await categoryTasks.theUserCanSeeTheCategoryDisplayed( userRemember.getVariable("categoryName"),  userRemember.getVariable("page"))
+  await categoryTasks.theUserCanSeeTheCategoryDisplayed(userRemember.getVariable("categoryName"), userRemember.getVariable("page"))
 });
 
 When('the user creates a new subcategory named {string}', async (name: string) => {

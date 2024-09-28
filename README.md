@@ -3,7 +3,7 @@
 
 ## Overview:
 
-This project demonstrates how to effectively use Cucumber.js and Playwright to automate the entire workflow of the Qubika Sports Club management website. By combining API and UI testing within the same test suite, this approach ensures comprehensive coverage and helps identify potential issues early in the development process.
+This project demostrates how to effectively use Cucumber.js and Playwright to automate the entire workflow of the Qubika Sports Club management website. By combining API and UI testing within the same test suite, this approach ensures comprehensive coverage and helps identify potential issues early in the development process.
 
 ## Prerequisites:
 - _Node.js and npm_: Ensure you have Node.js and npm (Node Package Manager) installed on your system.

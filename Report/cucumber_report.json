@@ -1,0 +1,170 @@
+[
+  {
+    "description": "Description: as a new user I want to create categories and sub categories\non Qubika Sport Club Managment website to a better organization",
+    "elements": [
+      {
+        "description": "",
+        "id": "categories-and-sub-categories;a-new-user-wants-to-create-a-new-category-and-sub-category",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "A new user wants to create a new category and sub category",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 562949900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "a new user is registered via API",
+            "match": {
+              "location": "src\\tests\\stepdefinitions\\Login.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 974772799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "the registered user goes to the website",
+            "match": {
+              "location": "src\\tests\\stepdefinitions\\Login.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2529512400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the user is presented with the login form",
+            "match": {
+              "location": "src\\tests\\stepdefinitions\\Login.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7484800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the user enters valid credentials and submits the login form",
+            "match": {
+              "location": "src\\tests\\stepdefinitions\\Login.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5135386600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "the user is successfully logged in",
+            "match": {
+              "location": "src\\tests\\stepdefinitions\\Login.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6723000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "the user is on the category page",
+            "match": {
+              "location": "src\\tests\\stepdefinitions\\Categories.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57299899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "a new category is created via API with name \"Test Category Parent\"",
+            "match": {
+              "location": "src\\tests\\stepdefinitions\\Categories.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 101030299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the user is seeing the newly created category in the list",
+            "match": {
+              "location": "src\\tests\\stepdefinitions\\Categories.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 547690999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "the user creates a new subcategory named \"Test Sub category Child\"",
+            "match": {
+              "location": "src\\tests\\stepdefinitions\\Categories.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 344079900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "the subcategory is successfully added to the category list and displayed",
+            "match": {
+              "location": "src\\tests\\stepdefinitions\\Categories.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 967794999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 174608700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "categories-and-sub-categories",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "categories and sub categories",
+    "tags": [],
+    "uri": "src\\tests\\features\\e2e\\categories.feature"
+  }
+]

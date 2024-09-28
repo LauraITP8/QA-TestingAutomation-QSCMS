@@ -14,10 +14,10 @@ export let categoryTasks: CategoryTasks
 
 setDefaultTimeout(60000)
 
- /**
-   * Before represents the step begins the execution
-   * is the responsible to instance the classes and return the context and page
-   */
+/**
+  * Before represents the step begins the execution
+  * is the responsible to instance the classes and return the context and page
+  */
 
 Before(async () => {
     try {
