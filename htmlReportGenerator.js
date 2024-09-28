@@ -1,6 +1,6 @@
 const reporter = require('cucumber-html-reporter')
 var date = new Date()
-var currentDate = date.getDate() + "_" + date.getUTCMonth()  + "_" + date.getFullYear()
+var currentDate = date.getDate() + "_" + (date.getUTCMonth()+1)  + "_" + date.getFullYear()
     + "_" + date.getHours() + "_" + date.getMinutes() + "_" + date.getSeconds();
 
 var options = {
