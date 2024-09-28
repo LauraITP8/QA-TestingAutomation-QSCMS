@@ -1,3 +1,7 @@
+/**
+ * Class representa una lista de productos.
+ * 
+ */
 export class TheUserRemember {
 
     private static instance: TheUserRemember;

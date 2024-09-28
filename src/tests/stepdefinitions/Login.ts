@@ -1,5 +1,5 @@
 import { Given, Then, When } from "@cucumber/cucumber";
-import { registerNewUser } from "../utils/RegisterUserApis";
+import { registerNewUser } from "../utils/Apis/RegisterUserApis";
 import { expect } from "playwright/test";
 import { UserModel } from "../models/UserModel";
 import { homeTasks, loginTasks, page } from "../hooks";

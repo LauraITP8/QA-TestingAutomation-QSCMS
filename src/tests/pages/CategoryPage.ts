@@ -1,5 +1,7 @@
 import { page } from "../hooks";
-
+/**
+ * Class CategoryPage represents the elements that a the page has.
+ */
 export class CategoryPage{
   tittleCategory= page.getByRole('heading', { name: 'Tipos de categorías' })
 

@@ -1,7 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
 
-
-
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
@@ -27,6 +25,7 @@ export default defineConfig({
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
+    
     baseURL: 'https://api.club-administration.qa.qubika.com',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
@@ -68,8 +67,8 @@ export default defineConfig({
     //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
     // },
     // {
-      name: 'Google Chrome',
-      use: { ...devices['Desktop Chrome'], channel: 'chrome' },
+    // name: 'Google Chrome',
+    // use: { ...devices['Desktop Chrome'], channel: 'chrome' },
     },
   ],
 

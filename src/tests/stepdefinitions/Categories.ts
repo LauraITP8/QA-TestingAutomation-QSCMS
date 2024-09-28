@@ -1,7 +1,7 @@
 import { Given, Then, When } from '@cucumber/cucumber'
 import { categoryTasks, homeTasks, page } from '../hooks';
 import { expect } from 'playwright/test';
-import { createANewCategory, getCategoryPage } from '../utils/CategoryApis';
+import { createANewCategory, getCategoryPage } from '../utils/Apis/CategoryApis';
 import { TheUserRemember } from '../utils/TheUserRemember'
 const userRemember = TheUserRemember.getInstance();
 
